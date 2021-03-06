@@ -1,5 +1,5 @@
 * {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
 }
 body{
@@ -129,6 +129,8 @@ form{
     text-align: left;
     color: #222222;
     margin-right: 50px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
 }
 .mainNav{
     text-align: center;
@@ -528,4 +530,112 @@ margin-right: 100px;
     margin-left: 15px;
     margin-right: 15px;
 }
+.mainNavList li{
+    display: inline;
+}
+.mega-box{
+    background-color: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    padding: 20px 25px 25px 25px;
+    position: absolute;
+    display: none;
+    text-align: left;
+    margin-top: 10px;
+}
+.menuList .mega-box{
+    align-items: center;
+}
+.megaBoxCenter1{
+    left: -70px;
+}
+.megaBoxCenter2{
+    left: -166px;
+}
+.megaBoxCenter3{
+    left: -252px;
+}
+.megaBoxCenter4{
+    left: -363px;
+}
+.megaBoxCenter5{
+    left: -448px;
+}
+.megaBoxCenter6{
+    left: -593px;
+}
+.megaBoxCenter7{
+    left: -717px;
+}
+.mega-box::before{
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color:white;
+    position: absolute;
+    transform: rotate(45deg);
+    border-left: 1px solid #e8e8e8;
+    border-top: 1px solid #e8e8e8;
+    top: -9px;
+}
+.megaBoxCenter1:before{
+    left: 83px;
+}
+.megaBoxCenter2:before{
+    left: 175px;
+}
+.megaBoxCenter3:before{
+    left: 275px;
+}
+.megaBoxCenter4:before{
+    left: 370px;
+}
+.megaBoxCenter5:before{
+    left: 487px;
+}
+.megaBoxCenter6:before{
+    left: 620px;
+}
+.megaBoxCenter7:before{
+    left: 750px;
+}
+.menuList:hover .mega-box{
+    display: flex;
+}
+.mega-head{
+    font-size: 14px;
+    color: #232323;
+    font-weight: 400;
+    text-transform: uppercasex;
+    border-bottom: solid 1px #e8e8e8;
+    width: 235px;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+.mega-flex{
+    margin-right: 45px;
+}
+.mega-flex:last-of-type{
+    margin-right: 0;
+}
+.menuList, .megaHeadLi{
+    list-style-type: none;
+}
+.megaHeadLi a{
+    color: #646464;
+    font-size: 14px;
+    line-height: 2.29;
+    letter-spacing: 0.35px;
+}
+.megaMenuLink{
+    display: block;
+}
+.megaMenuLink:hover{
+    color: #f16d7f;
+}
+.menuList{
+    position: relative;
+}
+
 
