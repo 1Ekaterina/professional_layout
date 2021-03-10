@@ -188,6 +188,10 @@ form{
     text-align: left;
     top: 75px;
 }
+.cartImg{
+    width: 70px;
+    height: 90px;
+}
 .cartDown::before{
     content: "";
     display: block;
@@ -539,6 +543,9 @@ form{
     letter-spacing: normal;
     color: #222222;
 }
+.cardText:hover{
+    color:#ef5b70 ;
+}
 .cardSum{
     margin-top: 17px;
     font-size: 16px;
@@ -573,6 +580,7 @@ form{
     position: relative;
     padding-right: 30px;
     box-sizing: border-box;
+    margin-bottom: 100px;
 }
 .pinkAdv{
     font-size: 53.5px;
@@ -690,6 +698,7 @@ form{
     border-radius: 23px;
     background-color: #e1e1e1;
     border: 0;
+    outline: none;
 }
 .subEmail{
     border: 0;
@@ -704,10 +713,11 @@ form{
     text-align: center;
     color: #ffffff;
     margin-left: -100px;
-    border-left: solid;
+    outline: none;
 }
 .formFeedback{
     justify-content: center;
+    outline: none;
 }
 .brandFooter{
     width: 40%;
@@ -749,8 +759,10 @@ form{
     font-style: normal;
     line-height: 2.63;
     letter-spacing: 0.4px;
-    text-align: right;
     color: #898989;
+}
+.linkFooter:hover{
+    color: #f16d7f;
 }
 .menuFooter1, .menuFooter2{
 margin-right: 100px;
@@ -993,6 +1005,9 @@ margin-right: 100px;
     margin-top: 20px;
     font-size: 14px;
     color: #6f6e6e;
+}
+.cardTextSinglePage:hover{
+    color: #ef5b70;
 }
 .cardSumSinglePage{
     margin-top: 17px;
