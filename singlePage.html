@@ -18,15 +18,17 @@
         <div class="container">
             <div class="head">
                 <div class="leftHeader">
-                    <div class="logoHeader">
+                    <div class="leftHeader__flex">
                         <a href="index.html"><img src="img/logo.png" alt="logotip" width="59px" height="51px"></a>
-                        <a href="index.html"><p class="logoName">BRAN<span class="pink">D</span></p></a>
+                        <a href="index.html">
+                            <p class="logoName">BRAN<span class="pink">D</span></p>
+                        </a>
                     </div>
                     <div class="search">
                         <form action="">
                             <a class="browse" href="#">Browse<p class="fa fa-sort-desc"></p></a>
                             <div class="dropDown">
-                                <div class="dropDownFlex">
+                                <div class="dropDown__flex">
                                     <h3 class="dropDownHead"> WOMEN</h3>
                                     <ul>
                                         <li class="dropHeadLi"><a href="#" class="dropMenuLink">Dresses</a></li>
@@ -38,10 +40,10 @@
                                         <li class="dropHeadLi"><a href="#" class="dropMenuLink">Leggings/Pants</a> </li>
                                         <li class="dropHeadLi"><a href="#" class="dropMenuLink">Skirts/Shorts</a> </li>
                                         <li class="dropHeadLi"><a href="#" class="dropMenuLink">Accessories</a> </li>
-
+    
                                     </ul>
                                 </div>
-                                <div class="dropDownFlex">
+                                <div class="dropDown__flex">
                                     <h3 class="dropDownHead"> MEN</h3>
                                     <ul>
                                         <li class="dropHeadLi"><a href="#" class="dropMenuLink">Dresses</a></li>
@@ -50,14 +52,14 @@
                                         <li class="dropHeadLi"><a href="#" class="dropMenuLink">Jackets/Coats</a> </li>
                                         <li class="dropHeadLi"><a href="#" class="dropMenuLink">Blazers</a> </li>
                                         <li class="dropHeadLi"><a href="#" class="dropMenuLink">Denim</a> </li>
-
+    
                                     </ul>
                                 </div>
                             </div>
                             <input class="inputSearch" type="text" placeholder="Search for Item...">
                             <button class="fa fa-search"></button>
                         </form>
-
+    
                     </div>
                 </div>
                 <div class="rightHeader">
@@ -67,25 +69,23 @@
                             <img src="img/layer-43.png" alt="cart">
                             <div class="cartText">
                                 <h3 class="cartHead">REBOX ZANE</h3>
-                                <p class="fa fa-star"><span class="fa fa-star"></span><span
-                                        class="fa fa-star"></span><span class="fa fa-star"></span><span
-                                        class="fa fa-star-half-o"></span></p>
+                                <p class="fa fa-star"><span class="fa fa-star"></span><span class="fa fa-star"></span><span
+                                        class="fa fa-star"></span><span class="fa fa-star-half-o"></span></p>
                                 <p class="cartPrice">1 x $250</p>
                             </div>
                             <span class="fa fa-times-circle"></span>
-
+    
                         </div>
                         <div class="cartDownFlex">
                             <img class="cartImg" src="img/layer-42.png" alt="cart">
                             <div class="cartText">
                                 <h3 class="cartHead">REBOX ZANE</h3>
-                                <p class="fa fa-star"><span class="fa fa-star"></span><span
-                                        class="fa fa-star"></span><span class="fa fa-star"></span><span
-                                        class="fa fa-star-half-o"></span></p>
+                                <p class="fa fa-star"><span class="fa fa-star"></span><span class="fa fa-star"></span><span
+                                        class="fa fa-star"></span><span class="fa fa-star-half-o"></span></p>
                                 <p class="cartPrice">1 x $250</p>
                             </div>
                             <span class="fa fa-times-circle"></span>
-
+    
                         </div>
                         <p class="totalSum">TOTAL <span id="sumPrice">$500.00</span></p>
                         <div class="linkCart">
@@ -93,11 +93,11 @@
                             <a href="#" class="linkGoToCart">GO TO CART</a>
                         </div>
                     </div>
-
+    
                     <a class="myAcc" href="">My Account <p class="fa fa-sort-desc faAcc"></p></a>
                 </div>
             </div>
-
+    
         </div>
     </header>
     <nav>
@@ -511,25 +511,64 @@
             <p class="headerSinglePage">you may like also</p>
             <div class="cardMainSinglePage">
                 <div class="cardSinglePage">
-                    <img src="img/layer-44.png" alt="">
-                    <a href="#"><p class="cardTextSinglePage">MANGO PEOPLE T-SHIRT</p></a>
-                    <p class="cardSumSinglePage">$52.00</p>
+                    <a href="#" class="cardLink">
+                        <img class="card-imgSingle" src="img/layer-44.png" alt="">
+                        <div class="card-text-box">
+                            <a href="#"><p class="cardTextSinglePage">MANGO PEOPLE T-SHIRT</p></a>
+                        <p class="cardSumSinglePage">$52.00</p>
+                        </div>
+                    </a>
+                    
+                    <div class="box-add">
+                        <a class="add" href="#"><img class="add-img" src="img/cart-add.svg">Add to cart</a>
+                    </div>
                 </div>
                 <div class="cardSinglePage">
-                    <img src="img/layer-45.png" alt="">
-                    <a href="#"><p class="cardTextSinglePage">MANGO PEOPLE T-SHIRT</p></a>
-                    <p class="cardSumSinglePage">$52.00</p>
+                    <a href="#" class="cardLink">
+                        <img class="card-imgSingle" src="img/layer-45.png" alt="">
+                        <div class="card-text-box">
+                            <a href="#">
+                                <p class="cardTextSinglePage">MANGO PEOPLE T-SHIRT</p>
+                            </a>
+                            <p class="cardSumSinglePage">$52.00</p>
+                        </div>
+                    </a>
+                
+                    <div class="box-add">
+                        <a class="add" href="#"><img class="add-img" src="img/cart-add.svg">Add to cart</a>
+                    </div>
                 </div>
                 <div class="cardSinglePage">
-                    <img src="img/layer-46.png" alt="">
-                    <a href="#"><p class="cardTextSinglePage">MANGO PEOPLE T-SHIRT</p></a>
-                    <p class="cardSumSinglePage">$52.00</p>
+                    <a href="#" class="cardLink">
+                        <img class="card-imgSingle" src="img/layer-46.png" alt="">
+                        <div class="card-text-box">
+                            <a href="#">
+                                <p class="cardTextSinglePage">MANGO PEOPLE T-SHIRT</p>
+                            </a>
+                            <p class="cardSumSinglePage">$52.00</p>
+                        </div>
+                    </a>
+                
+                    <div class="box-add">
+                        <a class="add" href="#"><img class="add-img" src="img/cart-add.svg">Add to cart</a>
+                    </div>
                 </div>
                 <div class="cardSinglePage">
-                    <img src="img/layer-47.png" alt="">
-                    <a href="#"><p class="cardTextSinglePage">MANGO PEOPLE T-SHIRT</p></a>
-                    <p class="cardSumSinglePage">$52.00</p>
+                    <a href="#" class="cardLink">
+                        <img class="card-imgSingle" src="img/layer-47.png" alt="">
+                        <div class="card-text-box">
+                            <a href="#">
+                                <p class="cardTextSinglePage">MANGO PEOPLE T-SHIRT</p>
+                            </a>
+                            <p class="cardSumSinglePage">$52.00</p>
+                        </div>
+                    </a>
+                
+                    <div class="box-add">
+                        <a class="add" href="#"><img class="add-img" src="img/cart-add.svg">Add to cart</a>
+                    </div>
                 </div>
+                
             </div>
             </div>
         </article>

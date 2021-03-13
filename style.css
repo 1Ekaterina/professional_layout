@@ -353,6 +353,9 @@ form{
 .block1{
     position: relative;
 }
+.block1:hover, .block2:hover, .block3:hover, .block4:hover{
+    box-shadow: #f16d7f 0 0 15px;
+}
 .block2{
     background-color: #dadad2;
     width: 560px;
@@ -525,13 +528,52 @@ form{
     margin-top: 60px;
     margin-bottom: 70px;
 }
-.card{
-    width: 263px;
-    height: 364px;
-    margin-bottom: 40px;
-    
+.card-imgSingle{
+    width: 100%;
+}
+.cardSinglePage:hover {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
 }
 
+.cardSinglePage{
+    position: relative;
+    width: 263px;
+    margin-bottom: 40px; 
+    flex-wrap: wrap;
+}
+.card:hover {
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+}
+.cardLink {
+    width: 263px;
+    display: block;
+    text-decoration: none;
+}
+.card{
+    position: relative;
+    width: 263px;
+    margin-bottom: 40px; 
+    flex-wrap: wrap;
+}
+.add {
+    border: 1px solid #ffffff;
+    padding: 12px 17px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.card-text-box {
+    padding: 0px 15px 20px;
+}
+.add:hover {
+    box-shadow: 0 0 10px #fff;
+}
+.add-img {
+    margin-right: 7px;
+}
 .cardText{
     margin-top: 20px;
     text-align: left;
@@ -645,7 +687,7 @@ form{
 .feedback{
     background-color: #f7f7f8;
     height: 440px;
-    background-image: url(img/layer-41.png);
+    background-image: linear-gradient( rgba(255, 255, 255, 0.8), rgba(0, 0, 0, 0.5) ),url(img/layer-41.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left bottom;
@@ -997,14 +1039,33 @@ margin-right: 100px;
 }
 .cardSinglePage{
     width: 263px;
-    height: 364px;
-    margin-bottom: 40px;
-    
+    margin-bottom: 40px;  
+    position: relative; 
+    flex-wrap: wrap;
+}
+.cardSinglePage:hover .card-imgSingle{
+    filter: brightness(50%);
+}
+.cardSinglePage:hover .box-add {
+    display: flex;
+}
+.card:hover .card-img{
+    filter: brightness(50%);
 }
 .cardTextSinglePage{
     margin-top: 20px;
     font-size: 14px;
     color: #6f6e6e;
+}
+.box-add {
+    position: absolute;
+    top: 98px;
+    display:none;
+    justify-content: center;
+    width: 100%;
+}
+.card:hover .box-add {
+    display: flex;
 }
 .cardTextSinglePage:hover{
     color: #ef5b70;
