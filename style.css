@@ -449,11 +449,27 @@ form{
 .mainImg{
     text-align: center;
     z-index: -3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .mainImgFon{
     border: solid 1px #eaeaea;
     background-color: #f7f7f7;
     height: 777px;
+}
+.slider{
+    width: 47px;
+    height: 47px;
+    border: solid 1px #eaeaea;
+    background-color: #e6e6e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    line-height: 1;
+    text-align: left;
+    color: #ffffff;
 }
 .formAdd{
     border: solid 1px #eaeaea;
