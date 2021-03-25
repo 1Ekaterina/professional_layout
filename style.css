@@ -21,8 +21,34 @@
   color: #222222;
 }
 
+.dropDown::before, .cartDown::before, .mega-box::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-left: 1px solid #e8e8e8;
+  border-top: 1px solid #e8e8e8;
+}
+
+.dropDown, .cartDown, .mega-box {
+  background-color: #ffffff;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  padding: 20px 25px 25px 25px;
+  position: absolute;
+  display: none;
+  text-align: left;
+}
+
 .dropHeadLi a, .dropDownHead {
   font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
   line-height: 2;
   letter-spacing: 0.35px;
 }
@@ -36,34 +62,6 @@
   background-color: #f16d7f;
 }
 
-.dropDown, .cartDown {
-  background-color: #ffffff;
-  border: 1px solid #e8e8e8;
-  border-radius: 5px;
-  padding: 10px 25px 25px 25px;
-  position: absolute;
-  display: none;
-  text-align: left;
-}
-
-.dropDown::before, .cartDown::before {
-  content: "";
-  display: block;
-  width: 10px;
-  height: 10px;
-  background-color: white;
-  position: absolute;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  border-left: 1px solid #e8e8e8;
-  border-top: 1px solid #e8e8e8;
-}
-
-.linkCheckout:hover {
-  border: solid 1px #f16d7f;
-  color: #f16d7f;
-}
-
 .linkCheckout {
   font-size: 15px;
   border: solid 1px #eaeaea;
@@ -73,6 +71,11 @@
   text-align: left;
   color: #4a4a4a;
   margin-top: 10px;
+}
+
+.linkCheckout:hover {
+  border: solid 1px #f16d7f;
+  color: #f16d7f;
 }
 
 body {
@@ -293,10 +296,7 @@ input[type="submit"] {
 .nav {
   font-size: 14px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.86;
-  letter-spacing: normal;
   text-align: left;
   color: #222222;
   margin-right: 50px;
@@ -1080,13 +1080,6 @@ input[type="submit"] {
 }
 
 .mega-box {
-  background-color: #ffffff;
-  border: 1px solid #e8e8e8;
-  border-radius: 5px;
-  padding: 20px 25px 25px 25px;
-  position: absolute;
-  display: none;
-  text-align: left;
   margin-top: 10px;
 }
 
@@ -1125,17 +1118,7 @@ input[type="submit"] {
 }
 
 .mega-box::before {
-  content: "";
-  display: block;
-  width: 16px;
-  height: 16px;
-  background-color: white;
-  position: absolute;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  border-left: 1px solid #e8e8e8;
-  border-top: 1px solid #e8e8e8;
-  top: -9px;
+  top: -6px;
 }
 
 .megaBoxCenter1:before {

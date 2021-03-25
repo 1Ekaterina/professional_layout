@@ -32,17 +32,43 @@
     border-top: 1px solid #e8e8e8;
 }
 %boxDown{
-
+    background-color: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    padding: 20px 25px 25px 25px;
+    position: absolute;
+    display: none;
+    text-align: left;
 }
-font-size: 14px;
-    font-weight: bold;
-    line-height: 1.86;
+%linkMenu{
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: 0.35px;
+}
+%buttonPink{
+    line-height: 2.13;
+    letter-spacing: 0.38px;
+    text-align: right;
+    color: #ffffff;
+    padding: 2px 12px;
+    background-color: #f16d7f;
+}
+%buttonMain{
+    font-size: 15px;
+    border: solid 1px #eaeaea;
     padding: 14px 74px;
     font-size: 14px;
     font-weight: bold;
     text-align: left;
     color: #4a4a4a;
     margin-top: 10px;
+}
+%buttonMainPink{
+    border: solid 1px #f16d7f;
+    color: #f16d7f;
 }
 body {
     font-family: Lato;
@@ -114,10 +140,12 @@ a {
 li {
     list-style-type: none;
 }
-.dropHeadLi a {
+.dropHeadLi{
+    a {
     @extend %linkMenu;
     color: #4f4f4f;
-}
+    }
+} 
 .dropDownHead {
     @extend %linkMenu;
     color: #232323;
@@ -240,19 +268,20 @@ form {
     margin: 5px 0px 6px 0;
 }
 .nav {
-    
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.86;
+    text-align: left;
     color: #222222;
     margin-right: 50px;
     padding-bottom: 20px;
     box-sizing: border-box;
 }
-
 .mainNav {
     text-align: center;
     margin-top: 15px;
     margin-bottom: 15px;
 }
-
 .baner {
     background-color: #e8e8e8;
     height: 550px;
@@ -950,21 +979,15 @@ form {
 .mainNavList li {
     display: inline;
 }
-
 .mega-box {
-    background-color: #ffffff;
-    border: 1px solid #e8e8e8;
-    border-radius: 5px;
-    padding: 20px 25px 25px 25px;
-    position: absolute;
-    display: none;
-    text-align: left;
+    @extend %boxDown;
     margin-top: 10px;
 }
-
-.menuList .mega-box {
+.menuList{
+    .mega-box {
     align-items: center;
-}
+    }
+} 
 
 .megaBoxCenter1 {
     left: -70px;
@@ -995,16 +1018,8 @@ form {
 }
 
 .mega-box::before {
-    content: "";
-    display: block;
-    width: 16px;
-    height: 16px;
-    background-color: white;
-    position: absolute;
-    transform: rotate(45deg);
-    border-left: 1px solid #e8e8e8;
-    border-top: 1px solid #e8e8e8;
-    top: -9px;
+    @extend %boxDown-before;
+    top: -6px;
 }
 
 .megaBoxCenter1:before {
