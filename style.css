@@ -62,7 +62,7 @@
   background-color: #f16d7f;
 }
 
-.linkCheckout {
+.linkCheckout, .myAccSinglePage, .buttonShoppingCart, .formaShoppingCardLink {
   font-size: 15px;
   border: solid 1px #eaeaea;
   padding: 14px 74px;
@@ -73,7 +73,7 @@
   margin-top: 10px;
 }
 
-.linkCheckout:hover {
+.linkCheckout:hover, .myAccSinglePage:hover, .buttonShoppingCart:hover, .formaShoppingCardLink:hover {
   border: solid 1px #f16d7f;
   color: #f16d7f;
 }
@@ -1079,14 +1079,34 @@ input[type="submit"] {
   display: inline;
 }
 
+.mega-flex {
+  margin-right: 45px;
+}
+
 .mega-box {
   margin-top: 10px;
 }
 
-.menuList .mega-box {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.imgMega-Flex {
+  position: relative;
+}
+
+.imgMegaMenu {
+  position: absolute;
+  margin-top: 20px;
+  margin-left: -20px;
+}
+
+.imgMegaMenuText {
+  position: absolute;
+  top: 70px;
+  right: 15px;
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 1.27;
+  letter-spacing: 0.55px;
+  text-align: left;
+  color: #ffffff;
 }
 
 .megaBoxCenter1 {
@@ -1164,10 +1184,6 @@ input[type="submit"] {
   width: 235px;
   padding-bottom: 8px;
   margin-bottom: 15px;
-}
-
-.mega-flex {
-  margin-right: 45px;
 }
 
 .mega-flex:last-of-type {
@@ -1256,13 +1272,8 @@ input[type="submit"] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 16px;
-  font-weight: bold;
-  color: #ef5b70;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border: solid 1px #ef5b70;
-  margin-top: 30px;
+  padding: 20px 0;
+  margin: 20px 52px;
 }
 
 .cardMainSinglePage {
@@ -1441,17 +1452,7 @@ input[type="submit"] {
 }
 
 .buttonShoppingCart {
-  font-family: Lato;
-  font-size: 14px;
-  font-weight: bold;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-weight: bold;
-  color: #4a4a4a;
   padding: 20px 38px 18px 39px;
-  border: solid 1px #eaeaea;
-  background-color: #ffffff;
 }
 
 .formaShoppingCard {
@@ -1503,16 +1504,9 @@ input[type="submit"] {
 .formaShoppingCardLink {
   display: inline-block;
   font-size: 11px;
-  font-weight: bold;
-  text-align: left;
-  color: #4a4a4a;
   text-transform: uppercase;
   padding: 10px 12px 10px 12px;
-  border: solid 1px #eaeaea;
-  background-color: #ffffff;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin-top: 23px;
+  margin-top: 20px;
 }
 
 .formaShoppingCard__Center,

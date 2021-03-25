@@ -979,15 +979,33 @@ form {
 .mainNavList li {
     display: inline;
 }
+.mega-flex {
+    margin-right: 45px;
+}
 .mega-box {
     @extend %boxDown;
     margin-top: 10px;
 }
-.menuList{
-    .mega-box {
-    align-items: center;
-    }
-} 
+.imgMega-Flex{
+    position: relative;
+}
+.imgMegaMenu{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: -20px;
+}
+.imgMegaMenuText{
+    position: absolute;
+    top: 70px;
+    right: 15px;
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 1.27;
+    letter-spacing: 0.55px;
+    text-align: left;
+    color: #ffffff;
+}
+
 
 .megaBoxCenter1 {
     left: -70px;
@@ -1065,9 +1083,7 @@ form {
     margin-bottom: 15px;
 }
 
-.mega-flex {
-    margin-right: 45px;
-}
+
 
 .mega-flex:last-of-type {
     margin-right: 0;
@@ -1147,13 +1163,12 @@ form {
 .myAccSinglePage {
     display: flex;
     justify-content: center;
-    font-size: 16px;
-    font-weight: bold;
-    color: #ef5b70;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border: solid 1px #ef5b70;
-    margin-top: 30px;
+    @extend %buttonMain;
+    padding: 20px 0;
+    margin: 20px 52px;
+}
+.myAccSinglePage:hover{
+    @extend %buttonMainPink;
 }
 
 .cardMainSinglePage {
@@ -1308,16 +1323,13 @@ form {
 }
 
 .buttonShoppingCart {
-    font-family: Lato;
-    font-size: 14px;
-    font-weight: bold;
-    justify-content: center;
-    font-weight: bold;
-    color: #4a4a4a;
     padding: 20px 38px 18px 39px;
-    border: solid 1px #eaeaea;
-    background-color: #ffffff;
+    @extend %buttonMain;
 }
+.buttonShoppingCart:hover {
+    @extend %buttonMainPink;
+}
+
 
 .formaShoppingCard {
     display: flex;
@@ -1364,17 +1376,14 @@ form {
 .formaShoppingCardLink {
     display: inline-block;
     font-size: 11px;
-    font-weight: bold;
-    text-align: left;
-    color: #4a4a4a;
+    @extend %buttonMain;
     text-transform: uppercase;
     padding: 10px 12px 10px 12px;
-    border: solid 1px #eaeaea;
-    background-color: #ffffff;
-    box-sizing: border-box;
-    margin-top: 23px;
+    margin-top: 20px;
 }
-
+.formaShoppingCardLink:hover{
+    @extend %buttonMainPink;
+}
 .formaShoppingCard__Center,
 .formaShoppingCard__Right {
     margin-left: 36px;
