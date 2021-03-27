@@ -1,20 +1,7 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-%flex-center {
-    display: flex;
-    align-items: center;
-}
-%subtitle {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 2.29;
-    letter-spacing: 0.35px;
-    text-align: right;
-    color: #222222;
-}
-%boxDown-before{
+
+
+
+.dropDown::before {
     content: "";
     display: block;
     width: 10px;
@@ -24,25 +11,89 @@
     transform: rotate(45deg);
     border-left: 1px solid #e8e8e8;
     border-top: 1px solid #e8e8e8;
+    top: -6px;
+    left: 76px;
 }
-%boxDown{
-    background-color: #ffffff;
-    border: 1px solid #e8e8e8;
-    border-radius: 5px;
-    padding: 20px 25px 25px 25px;
-    position: absolute;
-    display: none;
-    text-align: left;
+
+.dropMenuLink {
+    display: block;
 }
-%linkMenu{
+
+.dropMenuLink:hover {
+    color: #f16d7f;
+}
+
+.dropHeadLi {
+    list-style-type: none;
+}
+
+.dropHeadLi a {
     font-size: 14px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: 2;
     letter-spacing: 0.35px;
+    color: #4f4f4f;
 }
-%buttonPink{
+
+.dropDownHead {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.29;
+    letter-spacing: 0.35px;
+    color: #232323;
+    border-bottom: solid 1px #e8e8e8;
+    width: 236px;
+    padding-bottom: 5px;
+    margin-bottom: 7px;
+}
+
+.dropDownFlex:last-of-type {
+    margin-top: 20px;
+
+}
+
+
+input[type="submit"] {
+    cursor: pointer;
+}
+
+.inputSearch {
+    padding-left: 15px;
+    box-sizing: border-box;
+
+}
+
+.fa-search {
+    color: #a4a4a4;
+
+    padding: 10px 12px;
+    border: solid 1px #e6e6e6;
+    background-image: linear-gradient(to top, #f9f9f9, #f5f5f5);
+}
+
+.inputSearch {
+    width: 317px;
+    height: 38px;
+    border: solid 1px #e6e6e6;
+    background-color: #ffffff;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+.myAcc {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 2.13;
     letter-spacing: 0.38px;
     text-align: right;
@@ -50,7 +101,91 @@
     padding: 2px 12px;
     background-color: #f16d7f;
 }
-%buttonMain{
+
+.cartLinkDown {
+    margin-right: 20px;
+    position: relative;
+    padding: 20px;
+}
+
+.cartDown {
+    background-color: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    padding: 10px 25px 25px 25px;
+    position: absolute;
+    display: none;
+    text-align: left;
+    top: 75px;
+}
+
+.cartImg {
+    width: 70px;
+    height: 90px;
+}
+
+.cartDown::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    position: absolute;
+    transform: rotate(45deg);
+    border-left: 1px solid #e8e8e8;
+    border-top: 1px solid #e8e8e8;
+    top: -9px;
+    left: 30px;
+}
+
+.cartLinkDown:focus+.cartDown {
+    display: flex;
+    flex-direction: column;
+}
+
+.cartDownFlex {
+    display: flex;
+    border-bottom: solid 1px #ededed;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.cartHead {
+    color: #222222;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.totalSum {
+    font-size: 16px;
+    color: #222222;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#sumPrice {
+    font-size: 16px;
+    float: right;
+    color: #222222;
+    font-weight: bold;
+}
+
+.linkCheckout {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    border: solid 1px #f16d7f;
+    padding: 14px 74px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    color: #f16d7f;
+    margin-top: 32px;
+}
+
+.linkGoToCart {
+    display: flex;
+    align-items: center;
     font-size: 15px;
     border: solid 1px #eaeaea;
     padding: 14px 74px;
@@ -60,190 +195,22 @@
     color: #4a4a4a;
     margin-top: 10px;
 }
-%buttonMainPink{
-    border: solid 1px #f16d7f;
-    color: #f16d7f;
-}
-body {
-    font-family: Lato;
-}
-.container {
-    margin: 0 auto;
-    width: 1140px;
-}
-.head {
-    height: 100px;
-    @extend %flex-center;
-    justify-content: space-between;
-}
-.leftHeader, .rightHeader, .logoHeader {
-    @extend %flex-center;
-}
-header {
-    box-sizing: border-box;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.17);
-    border: solid 1px #ececec;
-    background-color: #ffffff;
-}
-a {
-    text-decoration: none;
-    padding: 0;
-}
-.logoName {
-    font-size: 27px;
-    font-weight: 300;
-    line-height: 1.19;
-    letter-spacing: 0.68px;
-    text-align: center;
-    color: #222222;
-    padding: 0 40px 0 15px;
-}
-.pink {
-    font-weight: 900;
-    color: #f16d7f;
-}
-.browse {
-    @extend %flex-center;
-    @extend %subtitle;
-    padding: 2px 15px 2px 20px;
-    border: solid 1px #e6e6e6;
-    background-image: linear-gradient(to top, #f9f9f9, #f5f5f5);
-    position: relative;
-}
-.dropDown {
-    @extend %boxDown;
-    top: 70px;
-    z-index: 3;
-}
-.browse:focus{
-    +.dropDown {
-    display: block;   
-    }
-}
-.dropDown::before {
-    @extend %boxDown-before;  
-    top: -6px;
-    left: 76px;
-}
-.dropMenuLink {
-    display: block;
-}
-.dropMenuLink:hover {
-    color: #f16d7f;
-}
-li {
-    list-style-type: none;
-}
-.dropHeadLi{
-    a {
-    @extend %linkMenu;
-    color: #4f4f4f;
-    }
-} 
-.dropDownHead {
-    @extend %linkMenu;
-    color: #232323;
-    border-bottom: solid 1px #e8e8e8;
-    width: 236px;
-    padding-bottom: 5px;
-    margin-bottom: 7px;
-}
-.dropDownFlex:last-of-type {
-    margin-top: 20px;
-}
-input[type="submit"] {
-    cursor: pointer;
-}
-.inputSearch {
-    padding-left: 15px;
-    box-sizing: border-box;
-    width: 317px;
-    height: 38px;
-    border: solid 1px #e6e6e6;
-    background-color: #ffffff;
-}
-.fa-search {
-    color: #a4a4a4;
-    padding: 10px 12px;
-    border: solid 1px #e6e6e6;
-    background-image: linear-gradient(to top, #f9f9f9, #f5f5f5);
-}
-form {
-    @extend %flex-center;
-}
-.myAcc {
-    @extend %flex-center;
-    @extend %buttonPink;
-    font-size: 15px;
-}
-.cartLinkDown {
-    margin-right: 20px;
-    position: relative;
-    padding: 20px;
-}
-.cartDown {
-    @extend %boxDown;
-    top: 75px;
-}
-.cartImg {
-    width: 70px;
-    height: 90px;
-}
-.cartDown::before {
-    @extend %boxDown-before;
-    top: -7px;
-    left: 30px;
-}
-.cartLinkDown:focus+.cartDown {
-    display: block;
-}
-.cartDownFlex {
-    display: flex;
-    border-bottom: solid 1px #ededed;
-    padding-bottom: 15px;
-    padding-top: 15px;
-}
-.cartHead {
-    color: #222222;
-    font-size: 12px;
-    font-weight: bold;
-}
-.cartPrice {
-    color: #f16d7f;
-    font-size: 12px;
-}
-.totalSum {
-    font-size: 16px;
-    color: #222222;
-    font-weight: bold;
-    margin-top: 20px;
-}
-#sumPrice {
-    font-size: 16px;
-    float: right;
-    color: #222222;
-    font-weight: bold;
-}
 
-.linkCheckout:first-of-type{
-    margin-top: 25px;
-}
-.linkCheckout {
-    @extend %flex-center;
-    @extend %buttonMain; 
-}
-.linkCheckout:hover {
-    @extend %flex-center;
-    @extend %buttonMainPink; 
-}
 .fa-sort-desc {
     color: #a4a4a4;
     margin-left: 8px;
 }
+
 .cartText {
     margin-left: 15px;
     margin-top: 7px;
 }
+
+.cartPrice {
+    color: #f16d7f;
+    font-size: 12px;
+}
+
 .fa-times-circle_cartDown {
     text-align: right;
     color: #c0c0c0;
@@ -251,31 +218,39 @@ form {
     margin-left: 50px;
     align-self: center;
 }
+
 .faAcc {
     color: #ffffff;
     margin-left: 8px;
 }
+
 .fa-star,
 .fa-star-half-o {
     font-size: 12px;
     color: #e4af48;
     margin: 5px 0px 6px 0;
 }
+
 .nav {
     font-size: 14px;
     font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
     line-height: 1.86;
+    letter-spacing: normal;
     text-align: left;
     color: #222222;
     margin-right: 50px;
     padding-bottom: 20px;
     box-sizing: border-box;
 }
+
 .mainNav {
     text-align: center;
     margin-top: 15px;
     margin-bottom: 15px;
 }
+
 .baner {
     background-color: #e8e8e8;
     height: 550px;
@@ -973,33 +948,21 @@ form {
 .mainNavList li {
     display: inline;
 }
-.mega-flex {
-    margin-right: 45px;
-}
+
 .mega-box {
-    @extend %boxDown;
+    background-color: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    padding: 20px 25px 25px 25px;
+    position: absolute;
+    display: none;
+    text-align: left;
     margin-top: 10px;
 }
-.imgMega-Flex{
-    position: relative;
-}
-.imgMegaMenu{
-    position: absolute;
-    margin-top: 20px;
-    margin-left: -20px;
-}
-.imgMegaMenuText{
-    position: absolute;
-    top: 70px;
-    right: 15px;
-    font-size: 22px;
-    font-weight: 900;
-    line-height: 1.27;
-    letter-spacing: 0.55px;
-    text-align: left;
-    color: #ffffff;
-}
 
+.menuList .mega-box {
+    align-items: center;
+}
 
 .megaBoxCenter1 {
     left: -70px;
@@ -1030,8 +993,16 @@ form {
 }
 
 .mega-box::before {
-    @extend %boxDown-before;
-    top: -6px;
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    position: absolute;
+    transform: rotate(45deg);
+    border-left: 1px solid #e8e8e8;
+    border-top: 1px solid #e8e8e8;
+    top: -9px;
 }
 
 .megaBoxCenter1:before {
@@ -1077,7 +1048,9 @@ form {
     margin-bottom: 15px;
 }
 
-
+.mega-flex {
+    margin-right: 45px;
+}
 
 .mega-flex:last-of-type {
     margin-right: 0;
@@ -1157,12 +1130,13 @@ form {
 .myAccSinglePage {
     display: flex;
     justify-content: center;
-    @extend %buttonMain;
-    padding: 20px 0;
-    margin: 20px 52px;
-}
-.myAccSinglePage:hover{
-    @extend %buttonMainPink;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ef5b70;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: solid 1px #ef5b70;
+    margin-top: 30px;
 }
 
 .cardMainSinglePage {
@@ -1317,13 +1291,16 @@ form {
 }
 
 .buttonShoppingCart {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: bold;
+    justify-content: center;
+    font-weight: bold;
+    color: #4a4a4a;
     padding: 20px 38px 18px 39px;
-    @extend %buttonMain;
+    border: solid 1px #eaeaea;
+    background-color: #ffffff;
 }
-.buttonShoppingCart:hover {
-    @extend %buttonMainPink;
-}
-
 
 .formaShoppingCard {
     display: flex;
@@ -1370,14 +1347,17 @@ form {
 .formaShoppingCardLink {
     display: inline-block;
     font-size: 11px;
-    @extend %buttonMain;
+    font-weight: bold;
+    text-align: left;
+    color: #4a4a4a;
     text-transform: uppercase;
     padding: 10px 12px 10px 12px;
-    margin-top: 20px;
+    border: solid 1px #eaeaea;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    margin-top: 23px;
 }
-.formaShoppingCardLink:hover{
-    @extend %buttonMainPink;
-}
+
 .formaShoppingCard__Center,
 .formaShoppingCard__Right {
     margin-left: 36px;
@@ -1429,83 +1409,12 @@ form {
     font-weight: bold;
     color: #222222;
 }
-
 .textFormaRightMainPink {
     color: #f16d7f;
 }
-
 .formaShoppingCard_margin {
     margin-left: 15px;
 }
-
-input,
-select {
+input,select {
     outline: none;
 }
-/* CHECKOUT PAGE*/
-.ac-container label {
-    font-family: 'Arial Narrow', Arial, sans-serif;
-    padding: 5px 20px;
-    display: block;
-    height: 30px;
-    color: #777;
-    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
-    line-height: 33px;
-    font-size: 19px;
-    background: linear-gradient(top, #ffffff 1%, #eaeaea 100%);
-
-    box-shadow:
-        0px 0px 0px 1px rgba(155, 155, 155, 0.3),
-        1px 0px 0px 0px rgba(255, 255, 255, 0.9) inset,
-        0px 2px 2px rgba(0, 0, 0, 0.1);
-}
-
-
-.ac-container label:hover {
-    background: #fff;
-}
-
-.ac-container input:checked+label,
-.ac-container input:checked+label:hover {
-    background: #c6e1ec;
-    color: #3d7489;
-    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.6);
-    box-shadow:
-        0px 0px 0px 1px rgba(155, 155, 155, 0.3),
-        0px 2px 2px rgba(0, 0, 0, 0.1);
-}
-
-.ac-container label:hover:after,
-.ac-container input:checked+label:hover:after {
-    content: '';
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    right: 13px;
-    top: 7px;
-    background: transparent url(http://netcribe.com/example/arrow_down.png) no-repeat center center;
-}
-
-
-
-.ac-container input {
-    display: none;
-}
-
-.ac-container article {
-    background: rgba(255, 255, 255, 0.5);
-    margin-top: -1px;
-    overflow: hidden;
-    height: 0px;
-    position: relative;
-    z-index: 10;
-    transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
-}
-
-.ac-container input:checked~article {
-
-    transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
-    
-    height: 100px;
-}
-
