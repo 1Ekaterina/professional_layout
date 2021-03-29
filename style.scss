@@ -36,9 +36,6 @@
 }
 %linkMenu{
     font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 2;
     letter-spacing: 0.35px;
 }
@@ -64,6 +61,9 @@
     border: solid 1px #f16d7f;
     color: #f16d7f;
 }
+
+/* ALL PAGE (HEADER,NAV,FOOTER)*/
+
 body {
     font-family: Lato;
 }
@@ -276,6 +276,43 @@ form {
     margin-top: 15px;
     margin-bottom: 15px;
 }
+.crumbs {
+    height: 150px;
+    background-color: #f8f3f4;
+}
+
+.crumbsHead {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 0.83;
+    text-align: left;
+    color: #f16d7f;
+    text-transform: uppercase;
+}
+
+.crumbsFlex {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.crumbsLeft {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.43;
+    text-align: center;
+    color: #636363;
+    text-transform: uppercase;
+}
+
+.crumbsLeftPink {
+    color: #f16d7f;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 300;
+}
+/* BANER INDEX PAGE*/
 .baner {
     background-color: #e8e8e8;
     height: 550px;
@@ -296,9 +333,6 @@ form {
     width: 525px;
     font-size: 40px;
     font-weight: 900;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
     letter-spacing: 1px;
     text-align: left;
     align-self: center;
@@ -312,6 +346,8 @@ form {
     font-weight: 900;
     letter-spacing: 1.5px;
 }
+
+/* MAIN INDEX PAGE*/
 
 .bigBlock {
     width: 560px;
@@ -368,9 +404,6 @@ form {
     background-color: #ffffff;
     font-size: 18px;
     font-weight: 900;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
     letter-spacing: 0.45px;
     text-align: left;
     color: #222222;
@@ -394,56 +427,13 @@ form {
 .shopTextMain {
     font-size: 30px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.8;
     letter-spacing: 0.75px;
     text-align: center;
     color: #222222;
 }
 
-.crumbs {
-    height: 150px;
-    background-color: #f8f3f4;
-}
 
-.crumbsHead {
-    font-size: 24px;
-    font-weight: 900;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 0.83;
-    letter-spacing: normal;
-    text-align: left;
-    color: #f16d7f;
-    text-transform: uppercase;
-}
-
-.crumbsFlex {
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.crumbsLeft {
-    font-size: 14px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.43;
-    letter-spacing: normal;
-    text-align: center;
-    color: #636363;
-    text-transform: uppercase;
-}
-
-.crumbsLeftPink {
-    color: #f16d7f;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 300;
-}
 
 .mainImg {
     text-align: center;
@@ -496,10 +486,7 @@ form {
 .textBlack {
     font-size: 14px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.71;
-    letter-spacing: normal;
     text-align: center;
     color: #2f2f2f;
 }
@@ -511,10 +498,7 @@ form {
 .textPadding {
     font-size: 14px;
     font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.71;
-    letter-spacing: normal;
     color: #5e5e5e;
     margin-bottom: 67px;
 }
@@ -522,10 +506,7 @@ form {
 .SumMain {
     font-size: 24px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1;
-    letter-spacing: normal;
     text-align: center;
     color: #ef5b70;
 
@@ -534,10 +515,7 @@ form {
 .h3Zag {
     font-size: 18px;
     font-weight: 900;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.33;
-    letter-spacing: normal;
     color: #4d4d4d;
     text-transform: uppercase;
     margin-bottom: 67px;
@@ -545,9 +523,6 @@ form {
 
 .shopText {
     font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 3.86;
     letter-spacing: 0.35px;
     text-align: center;
@@ -621,11 +596,6 @@ form {
     margin-top: 20px;
     text-align: left;
     font-size: 13px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
     color: #222222;
 }
 
@@ -637,10 +607,6 @@ form {
     margin-top: 17px;
     font-size: 16px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
     text-align: left;
     color: #f16d7f;
 }
@@ -650,8 +616,6 @@ form {
     background-color: #f16d7f;
     font-size: 16px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 3.38;
     letter-spacing: 0.4px;
     text-align: center;
@@ -687,9 +651,6 @@ form {
 .advText {
     font-size: 32px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
     letter-spacing: 0.8px;
     text-align: left;
     color: #ffffff;
@@ -708,9 +669,6 @@ form {
 .descMain {
     font-size: 20px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
     letter-spacing: 0.5px;
     text-align: left;
     color: #fbfbfb;
@@ -720,8 +678,6 @@ form {
 .descText {
     font-size: 14px;
     font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.71;
     letter-spacing: 0.35px;
     text-align: left;
@@ -763,8 +719,6 @@ form {
 
 .textMainFeedback {
     font-size: 16px;
-    font-weight: normal;
-    font-stretch: normal;
     font-style: italic;
     line-height: 1.63;
     letter-spacing: 0.4px;
@@ -794,9 +748,6 @@ form {
 
 .textFeedbackRight {
     font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.31;
     letter-spacing: 0.35px;
     text-align: center;
@@ -818,9 +769,6 @@ form {
     background-color: #f16d7f;
     border-radius: 0 23px 23px 0;
     font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     letter-spacing: 0.35px;
     text-align: center;
     color: #ffffff;
@@ -842,8 +790,6 @@ form {
     margin-top: 40px;
     font-size: 14px;
     font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.71;
     letter-spacing: 0.35px;
     text-align: leftt;
@@ -863,8 +809,6 @@ form {
 .titleFooter {
     font-size: 18px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.44;
     letter-spacing: 0.45px;
     color: #f16d7f;
@@ -873,9 +817,6 @@ form {
 
 .linkFooter {
     font-size: 16px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 2.63;
     letter-spacing: 0.4px;
     color: #898989;
@@ -900,9 +841,6 @@ form {
 
 .allRights {
     font-size: 16px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 2.63;
     letter-spacing: 0.4px;
     color: #7a7a7a;
@@ -1117,10 +1055,7 @@ form {
 .headChoose {
     font-size: 14px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.71;
-    letter-spacing: normal;
     color: #2f2f2f;
     margin-bottom: 16px;
 }
@@ -1131,11 +1066,7 @@ form {
     border: solid 1px #eaeaea;
     background-color: #ffffff;
     font-size: 13px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.85;
-    letter-spacing: normal;
     text-align: center;
     color: #bcbcbc;
 }
@@ -1146,11 +1077,7 @@ form {
     border: solid 1px #eaeaea;
     background-color: #ffffff;
     font-size: 13px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.85;
-    letter-spacing: normal;
     color: #bcbcbc;
 }
 
@@ -1225,10 +1152,7 @@ form {
 .headerSinglePage {
     font-size: 24px;
     font-weight: 900;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 0.83;
-    letter-spacing: normal;
     text-align: center;
     color: #4d4d4d;
     text-transform: uppercase;

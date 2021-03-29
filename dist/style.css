@@ -42,9 +42,6 @@
 
 .dropDownHead, .dropHeadLi a {
   font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 2;
   letter-spacing: 0.35px;
 }
@@ -74,6 +71,7 @@
   color: #f16d7f;
 }
 
+/* ALL PAGE (HEADER,NAV,FOOTER)*/
 body {
   font-family: Lato;
 }
@@ -295,6 +293,44 @@ input[type=submit] {
   margin-bottom: 15px;
 }
 
+.crumbs {
+  height: 150px;
+  background-color: #f8f3f4;
+}
+
+.crumbsHead {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 0.83;
+  text-align: left;
+  color: #f16d7f;
+  text-transform: uppercase;
+}
+
+.crumbsFlex {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.crumbsLeft {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.43;
+  text-align: center;
+  color: #636363;
+  text-transform: uppercase;
+}
+
+.crumbsLeftPink {
+  color: #f16d7f;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* BANER INDEX PAGE*/
 .baner {
   background-color: #e8e8e8;
   height: 550px;
@@ -315,9 +351,6 @@ input[type=submit] {
   width: 525px;
   font-size: 40px;
   font-weight: 900;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: 1px;
   text-align: left;
   align-self: center;
@@ -332,6 +365,7 @@ input[type=submit] {
   letter-spacing: 1.5px;
 }
 
+/* MAIN INDEX PAGE*/
 .bigBlock {
   width: 560px;
   height: 542px;
@@ -387,9 +421,6 @@ input[type=submit] {
   background-color: #ffffff;
   font-size: 18px;
   font-weight: 900;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: 0.45px;
   text-align: left;
   color: #222222;
@@ -413,55 +444,10 @@ input[type=submit] {
 .shopTextMain {
   font-size: 30px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.8;
   letter-spacing: 0.75px;
   text-align: center;
   color: #222222;
-}
-
-.crumbs {
-  height: 150px;
-  background-color: #f8f3f4;
-}
-
-.crumbsHead {
-  font-size: 24px;
-  font-weight: 900;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 0.83;
-  letter-spacing: normal;
-  text-align: left;
-  color: #f16d7f;
-  text-transform: uppercase;
-}
-
-.crumbsFlex {
-  height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.crumbsLeft {
-  font-size: 14px;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.43;
-  letter-spacing: normal;
-  text-align: center;
-  color: #636363;
-  text-transform: uppercase;
-}
-
-.crumbsLeftPink {
-  color: #f16d7f;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 300;
 }
 
 .mainImg {
@@ -514,10 +500,7 @@ input[type=submit] {
 .textBlack {
   font-size: 14px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.71;
-  letter-spacing: normal;
   text-align: center;
   color: #2f2f2f;
 }
@@ -529,10 +512,7 @@ input[type=submit] {
 .textPadding {
   font-size: 14px;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.71;
-  letter-spacing: normal;
   color: #5e5e5e;
   margin-bottom: 67px;
 }
@@ -540,10 +520,7 @@ input[type=submit] {
 .SumMain {
   font-size: 24px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1;
-  letter-spacing: normal;
   text-align: center;
   color: #ef5b70;
 }
@@ -551,10 +528,7 @@ input[type=submit] {
 .h3Zag {
   font-size: 18px;
   font-weight: 900;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.33;
-  letter-spacing: normal;
   color: #4d4d4d;
   text-transform: uppercase;
   margin-bottom: 67px;
@@ -562,9 +536,6 @@ input[type=submit] {
 
 .shopText {
   font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 3.86;
   letter-spacing: 0.35px;
   text-align: center;
@@ -638,11 +609,6 @@ input[type=submit] {
   margin-top: 20px;
   text-align: left;
   font-size: 13px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #222222;
 }
 
@@ -654,10 +620,6 @@ input[type=submit] {
   margin-top: 17px;
   font-size: 16px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   text-align: left;
   color: #f16d7f;
 }
@@ -667,8 +629,6 @@ input[type=submit] {
   background-color: #f16d7f;
   font-size: 16px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 3.38;
   letter-spacing: 0.4px;
   text-align: center;
@@ -704,9 +664,6 @@ input[type=submit] {
 .advText {
   font-size: 32px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: 0.8px;
   text-align: left;
   color: #ffffff;
@@ -725,9 +682,6 @@ input[type=submit] {
 .descMain {
   font-size: 20px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: 0.5px;
   text-align: left;
   color: #fbfbfb;
@@ -737,8 +691,6 @@ input[type=submit] {
 .descText {
   font-size: 14px;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.35px;
   text-align: left;
@@ -780,8 +732,6 @@ input[type=submit] {
 
 .textMainFeedback {
   font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
   font-style: italic;
   line-height: 1.63;
   letter-spacing: 0.4px;
@@ -811,9 +761,6 @@ input[type=submit] {
 
 .textFeedbackRight {
   font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.31;
   letter-spacing: 0.35px;
   text-align: center;
@@ -835,9 +782,6 @@ input[type=submit] {
   background-color: #f16d7f;
   border-radius: 0 23px 23px 0;
   font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   letter-spacing: 0.35px;
   text-align: center;
   color: #ffffff;
@@ -859,8 +803,6 @@ input[type=submit] {
   margin-top: 40px;
   font-size: 14px;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.35px;
   text-align: leftt;
@@ -879,8 +821,6 @@ input[type=submit] {
 .titleFooter {
   font-size: 18px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.44;
   letter-spacing: 0.45px;
   color: #f16d7f;
@@ -889,9 +829,6 @@ input[type=submit] {
 
 .linkFooter {
   font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 2.63;
   letter-spacing: 0.4px;
   color: #898989;
@@ -916,9 +853,6 @@ input[type=submit] {
 
 .allRights {
   font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 2.63;
   letter-spacing: 0.4px;
   color: #7a7a7a;
@@ -1132,10 +1066,7 @@ input[type=submit] {
 .headChoose {
   font-size: 14px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.71;
-  letter-spacing: normal;
   color: #2f2f2f;
   margin-bottom: 16px;
 }
@@ -1146,11 +1077,7 @@ input[type=submit] {
   border: solid 1px #eaeaea;
   background-color: #ffffff;
   font-size: 13px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.85;
-  letter-spacing: normal;
   text-align: center;
   color: #bcbcbc;
 }
@@ -1161,11 +1088,7 @@ input[type=submit] {
   border: solid 1px #eaeaea;
   background-color: #ffffff;
   font-size: 13px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.85;
-  letter-spacing: normal;
   color: #bcbcbc;
 }
 
@@ -1236,10 +1159,7 @@ input[type=submit] {
 .headerSinglePage {
   font-size: 24px;
   font-weight: 900;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 0.83;
-  letter-spacing: normal;
   text-align: center;
   color: #4d4d4d;
   text-transform: uppercase;
