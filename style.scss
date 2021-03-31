@@ -1549,6 +1549,14 @@ select {
   .radio_input:checked+.radio_label:after {
       opacity: 1;
   }
+ 
+  .menuTablet,
+  .AccTablet,
+  .cartTablet,
+  .cartLinkDownTablet,
+  .searchTablet {
+      display: none;
+  }
 // ADAPTIV INDEX PAGE
 @media (max-width:1024px){
     .container{
@@ -1561,12 +1569,7 @@ select {
     .card{
         width: 350px;
     }
-    .card:nth-child(2n+1){
-        height: 420px;
-    }
-    .card:nth-child(2n){
-        height: 375px;
-    }
+
     .cardMain{
         align-items:center;
     }
@@ -1628,4 +1631,67 @@ select {
     .karusel{
         justify-content: center;
     }
+}
+@media (max-width:768px){
+    .container{
+        padding: 0;
+    }
+    .logoTablet, .browse, .mainNav, .inputSearch{
+        display: none;
+    }
+    .iconTablet,
+    .cartTablet {
+        display: flex;
+        align-items:center;
+        justify-content: center;
+    }
+
+    .cartLinkDown{
+        padding: 0%;
+        margin-right: 0;
+    }
+    .cart{
+        display: none;;
+    }
+    .fa-search{
+        border:none;
+        background-color:auto;
+    }
+    .feedbackRight {
+        margin-top: -350px;
+        margin-left:50px;
+    }
+    header{
+        box-shadow: none;
+        border:none;
+        padding: 0;
+    }
+    .fa-navicon, .fa-user{
+        display: block;
+        color: white;
+        
+    }
+    .menuTablet,
+    .AccTablet,
+    .searchTablet,
+    .cartLinkDownTablet {
+        display: block;
+    }
+    .myAcc, .fa-search{
+        display: none;
+    }
+    .head{
+        padding: 0 16px;
+        background-color:black;
+    }
+    .searchTablet{
+        margin-left: 40px;
+    }
+    .menuTablet {
+        margin-right: 25px;
+    }
+    .AccTablet {
+        margin-right: 40px;
+    }
+    
 }

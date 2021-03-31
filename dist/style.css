@@ -1569,6 +1569,12 @@ select {
   opacity: 1;
 }
 
+.fa-navicon,
+.fa-user,
+.cartTablet {
+  display: none;
+}
+
 @media (max-width: 1024px) {
   .container {
     padding: 0px 16px;
@@ -1581,14 +1587,6 @@ select {
 
   .card {
     width: 350px;
-  }
-
-  .card:nth-child(2n+1) {
-    height: 420px;
-  }
-
-  .card:nth-child(2n) {
-    height: 375px;
   }
 
   .cardMain {
@@ -1666,5 +1664,60 @@ select {
 
   .karusel {
     justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0;
+  }
+
+  .logoTablet, .browse, .mainNav, .inputSearch {
+    display: none;
+  }
+
+  .iconTablet,
+.cartTablet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cartLinkDown {
+    padding: 0%;
+    margin-right: 0;
+  }
+
+  .cart {
+    display: none;
+  }
+
+  .fa-search {
+    border: none;
+    background-color: auto;
+  }
+
+  .feedbackRight {
+    margin-top: -350px;
+    margin-left: 50px;
+  }
+
+  header {
+    box-shadow: none;
+    border: none;
+    padding: 0;
+  }
+
+  .fa-navicon, .fa-user {
+    display: block;
+    color: white;
+  }
+
+  .myAcc {
+    display: none;
+  }
+
+  .head {
+    padding: 0 16px;
+    background-color: black;
   }
 }
