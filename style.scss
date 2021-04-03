@@ -364,6 +364,7 @@ form {
     display: flex;
     max-height: 823px;
     margin-top: 100px;
+    flex-direction: column;
 }
 .blockMain__left,
 .blockMain__right {
@@ -543,15 +544,59 @@ form {
 .cardMain {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: 60px;
     margin-bottom: 55px;
 }
-
+.ViewAll{
+    padding: 11px 45px 11px 47px;
+    border-radius: 3px;
+    color: #4a4a4a;
+    background-color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.63;
+    text-align: left;
+    border: 1px solid #eaeaea;
+}
+.ViewAll:hover{
+    color: #ef5b70;
+    border: solid 1px #ef5b70;
+}
 .card-imgSingle {
     width: 100%;
 }
-
+.numberPsge__inlineBlock{
+    display: inline-block;
+    padding-top: 10px;
+    padding-left: 10px;
+    box-sizing:border-box;
+}
+.numberPageText{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.63;
+    text-align: left;
+    color: #c4c4c4;
+    margin-right: 3px;
+}
+.numberPageText:hover{
+    color:#ef5b70;
+}
+.sliderBottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -40px;
+    margin-bottom: 110px;
+    
+}
+.numberPage{
+    width: 261px;
+    height: 44px;
+    border-radius: 3px;
+    border: solid 1px #ebebeb;
+    background-color: #ffffff;
+}
 .cardSinglePage:hover {
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
 }
@@ -1562,6 +1607,7 @@ select {
   .productMain{
       display: flex;
       margin-top: 55px;
+      justify-content: space-between;
   }
   
   .acContainerProduct{
@@ -1638,15 +1684,147 @@ select {
       transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
       height: 400px;
   }
-
+.productPage{
+    width: 80%;
+}
 .upProductPage{
     display: flex;
+    justify-content: space-between;
+}
+.trendingNow, .size, .price{
+    width: 260px;
+}
+.captionText{
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.43;
+    text-align: left;
+    color: #6f6e6e;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+.links_margin{
+    font-size: 14px;
+    line-height: 1.86;
+    text-align: left;
+    color: #6f6e6e;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.links{
+    font-size: 14px;
+    line-height: 1.86;
+    text-align: left;
+    color: #6f6e6e;
+}
+.links_margin:last-of-type{
+    margin-right: 0;
+}
+.links_margin:nth-of-type(4){
+    margin-left: 0;
+}
+.links_margin:first-of-type{
+    margin-left: 0;
 }
 
+.textSize{
+    font-family: OpenSans;
+    font-size: 14px;
+    line-height: 1.43;
+    text-align: left;
+    color: #6f6e6e;
+    margin-right: 18px;
+}
+.shkala{
+    width: 255px;
+    height: 6px;
+    margin: 9px 0px 7px 0px;
+    
+    border-radius: 3px;
+    background-color: #f0f0f0;
+}
+.priceSumm {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 1.86;
+    text-align: left;
+    color: #6f6e6e;
+}
+.navProducMain{
+    width: 900px;
+    height: 50px;
+    margin: 41px 0px 47px 0px;
+    padding-left: 10px;
+    display: flex;
+    align-items:center;
+    background-color: #f3f3f3;
+}
+.sortBy{
+    display: flex;
+    font-size: 14px;
+    line-height: 1.86;
+    text-align: left;
+    color: #6f6e6e;
+}
+.checkboxBlock{
+    margin-right: 5px;
+}
+.sortBy__{
+font-size: 14px;
+line-height: 1.86;
+text-align: left;
+color: #6f6e6e;
+height: 32px;
+margin: 0 10px 0 0;
+padding: 1px 10px 1px 13px;
+border: solid 1px #ebebeb;
+background-color: #ffffff;
+margin-left: -4px;
+}
+.sortByInput{
+    width: 60px;
+    height: 30px;
+    border: solid 1px #ebebeb;
+    background-color: #ffffff;
+    text-align: center  ;
 
+}
+.banerProduct{
+    height: 341px;
+    background-color: #222224;
 
-  
+}
+.baner__flex{
+    display: flex;
+    padding-top: 89px;
+    box-sizing:border-box;
+    justify-content: space-between;
+    align-items:center;
+}
+.descriptionProduct1,
+.descriptionProduct2,
+.descriptionProduct3{
+    text-align: center;
+    width: 330px;
 
+}
+.imgFormatProduct{
+    width: 46px;
+    height: 32px;
+    margin-bottom: 23px;
+}
+.imgFormatProduct2{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 23px;
+}
+.imgFormatProduct3{
+    width: 48px;
+    height: 35px;
+    margin-bottom: 23px;
+}
 // ADAPTIV INDEX PAGE
 @media (max-width:1024px){
     .container{
