@@ -1528,14 +1528,14 @@ select {
 }
 
 /* CHECKOUT PAGE*/
-.textCaption {
+.textCaption, .textCaptionProduct {
   font-size: 13px;
   color: #222222;
   text-transform: uppercase;
   font-weight: bold;
 }
 
-.textSubtitle {
+.textSubtitle, .textSubtitleProduct {
   font-size: 13px;
   line-height: 1.54;
   text-align: left;
@@ -1721,8 +1721,90 @@ select {
 .AccTablet,
 .cartTablet,
 .cartLinkDownTablet,
-.searchTablet {
+.searchTablet,
+.bigBlockTablet {
   display: none;
+}
+
+.productMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 55px;
+}
+
+.acContainerProduct {
+  margin-bottom: 20px;
+}
+
+.ac-containerProduct .labelProduct {
+  padding: 8px 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.43;
+  text-align: left;
+  color: #ef5b70;
+  text-transform: uppercase;
+  border-left: 6px solid #ef5b70;
+}
+
+.textCaptionProduct {
+  margin-bottom: 15px;
+}
+
+.textSubtitleProduct {
+  margin-bottom: 30px;
+}
+
+.li__margin {
+  margin-bottom: 10px;
+}
+
+.margin-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 40px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-bottom: 1px solid #e8e8e8;
+  padding-left: 20px;
+}
+
+.ac-containerProduct input[type="checkbox"] {
+  display: none;
+}
+
+.acContainerProduct:last-of-type {
+  margin-bottom: 93px;
+}
+
+.ac-containerProduct article {
+  background: rgba(255, 255, 255, 0.5);
+  margin-top: -1px;
+  overflow: hidden;
+  height: 0px;
+  position: relative;
+  z-index: 10;
+  -webkit-transition: height 0.3s ease-in-out, -webkit-box-shadow 0.6s linear;
+  transition: height 0.3s ease-in-out, -webkit-box-shadow 0.6s linear;
+  transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  transition: height 0.3s ease-in-out, box-shadow 0.6s linear, -webkit-box-shadow 0.6s linear;
+}
+
+.ac-containerProduct input:checked ~ article {
+  -webkit-transition: height 0.3s ease-in-out, -webkit-box-shadow 0.6s linear;
+  transition: height 0.3s ease-in-out, -webkit-box-shadow 0.6s linear;
+  transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  transition: height 0.3s ease-in-out, box-shadow 0.6s linear, -webkit-box-shadow 0.6s linear;
+  height: 400px;
 }
 
 @media (max-width: 1024px) {
@@ -1870,7 +1952,7 @@ select {
   .cartLinkDownTablet {
     display: block;
   }
-  .myAcc, .fa-search {
+  .myAcc, .fa-search, .block4 {
     display: none;
   }
   .head {
@@ -1885,6 +1967,14 @@ select {
   }
   .AccTablet {
     margin-right: 40px;
+  }
+  .blockMain__left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .bigBlockTablet {
+    display: block;
   }
 }
 /*# sourceMappingURL=style.css.map */
