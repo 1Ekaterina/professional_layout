@@ -184,6 +184,7 @@ form {
 .cartDown {
     @extend %boxDown;
     top: 75px;
+    z-index: 100;
 }
 .cartImg {
     width: 70px;
@@ -669,15 +670,26 @@ form {
 
 .browseAll {
     padding: 18px 19px 19px 24px;
-    background-color: #f16d7f;
+    
     font-size: 16px;
     font-weight: bold;
     line-height: 3.38;
     letter-spacing: 0.4px;
     text-align: center;
+    background-color: #f16d7f;
     color: #ffffff;
 }
-
+.browseAll:hover,
+.myAcc:hover,
+.formaShoppingCardLinkPink:hover,
+.linkContinue:hover{
+    border: solid 1px #f16d7f;
+    color: #f16d7f;
+    background-color:white;
+}
+.linkForgot:hover{
+    color: #f16d7f;
+}
 .fa-long-arrow-right {
     padding-left: 10px;
 }
@@ -1384,7 +1396,7 @@ form {
     font-weight: bold;
     text-align: left;
     color: #ffffff;
-    padding: 19px 42px 18px;
+    padding: 19px 40px 18px;
     background-color: #f16d7f;
     text-transform: uppercase;
     display: block;
