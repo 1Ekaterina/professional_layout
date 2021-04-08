@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -41,9 +42,6 @@
 
 .dropDownHead, .dropHeadLi a {
   font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 2;
   letter-spacing: 0.35px;
 }
@@ -73,13 +71,14 @@
   color: #f16d7f;
 }
 
+/* ALL PAGE (HEADER,NAV,FOOTER)*/
 body {
   font-family: Lato;
 }
 
 .container {
   margin: 0 auto;
-  width: 1140px;
+  max-width: 1140px;
 }
 
 .head {
@@ -294,6 +293,44 @@ input[type=submit] {
   margin-bottom: 15px;
 }
 
+.crumbs {
+  height: 150px;
+  background-color: #f8f3f4;
+}
+
+.crumbsHead {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 0.83;
+  text-align: left;
+  color: #f16d7f;
+  text-transform: uppercase;
+}
+
+.crumbsFlex {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.crumbsLeft {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.43;
+  text-align: center;
+  color: #636363;
+  text-transform: uppercase;
+}
+
+.crumbsLeftPink {
+  color: #f16d7f;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* BANER INDEX PAGE*/
 .baner {
   background-color: #e8e8e8;
   height: 550px;
@@ -314,9 +351,6 @@ input[type=submit] {
   width: 525px;
   font-size: 40px;
   font-weight: 900;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: 1px;
   text-align: left;
   align-self: center;
@@ -331,26 +365,31 @@ input[type=submit] {
   letter-spacing: 1.5px;
 }
 
+/* MAIN INDEX PAGE*/
 .bigBlock {
-  width: 560px;
-  height: 542px;
+  max-width: 560px;
+  max-height: 542px;
 }
 
 .smallBlock {
-  width: 560px;
-  height: 261px;
+  max-width: 560px;
+  max-height: 261px;
 }
 
 .blockMain {
   flex-wrap: wrap;
   display: flex;
-  flex-direction: column;
-  height: 823px;
+  max-height: 823px;
   margin-top: 100px;
 }
 
-.block1 {
-  position: relative;
+.blockMain__left,
+.blockMain__right {
+  width: 49%;
+}
+
+.blockMain__left {
+  margin-right: 15px;
 }
 
 .block1:hover,
@@ -360,23 +399,33 @@ input[type=submit] {
   box-shadow: #f16d7f 0 0 15px;
 }
 
+.block1 {
+  position: relative;
+  flex-grow: 1;
+}
+
 .block2 {
   background-color: #dadad2;
-  width: 560px;
-  height: 261px;
   margin-top: 20px;
-  margin-right: 15px;
   position: relative;
   text-align: right;
+  flex-grow: 1;
 }
 
 .block3 {
   margin-bottom: 20px;
   position: relative;
+  flex-grow: 1;
 }
 
 .block4 {
   position: relative;
+  flex-grow: 1;
+}
+
+.img_maxWidth {
+  max-width: 100%;
+  height: auto;
 }
 
 .textOn {
@@ -386,9 +435,6 @@ input[type=submit] {
   background-color: #ffffff;
   font-size: 18px;
   font-weight: 900;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: 0.45px;
   text-align: left;
   color: #222222;
@@ -412,55 +458,10 @@ input[type=submit] {
 .shopTextMain {
   font-size: 30px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.8;
   letter-spacing: 0.75px;
   text-align: center;
   color: #222222;
-}
-
-.crumbs {
-  height: 150px;
-  background-color: #f8f3f4;
-}
-
-.crumbsHead {
-  font-size: 24px;
-  font-weight: 900;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 0.83;
-  letter-spacing: normal;
-  text-align: left;
-  color: #f16d7f;
-  text-transform: uppercase;
-}
-
-.crumbsFlex {
-  height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.crumbsLeft {
-  font-size: 14px;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.43;
-  letter-spacing: normal;
-  text-align: center;
-  color: #636363;
-  text-transform: uppercase;
-}
-
-.crumbsLeftPink {
-  color: #f16d7f;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 300;
 }
 
 .mainImg {
@@ -513,10 +514,7 @@ input[type=submit] {
 .textBlack {
   font-size: 14px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.71;
-  letter-spacing: normal;
   text-align: center;
   color: #2f2f2f;
 }
@@ -528,10 +526,7 @@ input[type=submit] {
 .textPadding {
   font-size: 14px;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.71;
-  letter-spacing: normal;
   color: #5e5e5e;
   margin-bottom: 67px;
 }
@@ -539,10 +534,7 @@ input[type=submit] {
 .SumMain {
   font-size: 24px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1;
-  letter-spacing: normal;
   text-align: center;
   color: #ef5b70;
 }
@@ -550,10 +542,7 @@ input[type=submit] {
 .h3Zag {
   font-size: 18px;
   font-weight: 900;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.33;
-  letter-spacing: normal;
   color: #4d4d4d;
   text-transform: uppercase;
   margin-bottom: 67px;
@@ -561,9 +550,6 @@ input[type=submit] {
 
 .shopText {
   font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 3.86;
   letter-spacing: 0.35px;
   text-align: center;
@@ -573,9 +559,9 @@ input[type=submit] {
 .cardMain {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 60px;
-  margin-bottom: 70px;
+  margin-bottom: 55px;
 }
 
 .card-imgSingle {
@@ -598,14 +584,14 @@ input[type=submit] {
 }
 
 .cardLink {
-  width: 263px;
+  max-width: 263px;
   display: block;
   text-decoration: none;
 }
 
 .card {
   position: relative;
-  width: 263px;
+  max-width: 263px;
   margin-bottom: 40px;
   flex-wrap: wrap;
 }
@@ -637,11 +623,6 @@ input[type=submit] {
   margin-top: 20px;
   text-align: left;
   font-size: 13px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #222222;
 }
 
@@ -653,10 +634,6 @@ input[type=submit] {
   margin-top: 17px;
   font-size: 16px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   text-align: left;
   color: #f16d7f;
 }
@@ -666,8 +643,6 @@ input[type=submit] {
   background-color: #f16d7f;
   font-size: 16px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 3.38;
   letter-spacing: 0.4px;
   text-align: center;
@@ -680,7 +655,7 @@ input[type=submit] {
 
 .adv {
   margin-top: 110px;
-  height: 530px;
+  max-height: 530px;
   background-color: #222224;
   display: flex;
   position: relative;
@@ -703,9 +678,6 @@ input[type=submit] {
 .advText {
   font-size: 32px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: 0.8px;
   text-align: left;
   color: #ffffff;
@@ -724,11 +696,7 @@ input[type=submit] {
 .descMain {
   font-size: 20px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: 0.5px;
-  text-align: left;
   color: #fbfbfb;
   margin-bottom: 17px;
 }
@@ -736,11 +704,8 @@ input[type=submit] {
 .descText {
   font-size: 14px;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.35px;
-  text-align: left;
   color: #fbfbfb;
   margin-bottom: 60px;
 }
@@ -779,8 +744,6 @@ input[type=submit] {
 
 .textMainFeedback {
   font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
   font-style: italic;
   line-height: 1.63;
   letter-spacing: 0.4px;
@@ -810,9 +773,6 @@ input[type=submit] {
 
 .textFeedbackRight {
   font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.31;
   letter-spacing: 0.35px;
   text-align: center;
@@ -834,9 +794,6 @@ input[type=submit] {
   background-color: #f16d7f;
   border-radius: 0 23px 23px 0;
   font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   letter-spacing: 0.35px;
   text-align: center;
   color: #ffffff;
@@ -858,8 +815,6 @@ input[type=submit] {
   margin-top: 40px;
   font-size: 14px;
   font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.35px;
   text-align: leftt;
@@ -878,8 +833,6 @@ input[type=submit] {
 .titleFooter {
   font-size: 18px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.44;
   letter-spacing: 0.45px;
   color: #f16d7f;
@@ -888,9 +841,6 @@ input[type=submit] {
 
 .linkFooter {
   font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 2.63;
   letter-spacing: 0.4px;
   color: #898989;
@@ -915,9 +865,6 @@ input[type=submit] {
 
 .allRights {
   font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 2.63;
   letter-spacing: 0.4px;
   color: #7a7a7a;
@@ -1131,10 +1078,7 @@ input[type=submit] {
 .headChoose {
   font-size: 14px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.71;
-  letter-spacing: normal;
   color: #2f2f2f;
   margin-bottom: 16px;
 }
@@ -1145,11 +1089,7 @@ input[type=submit] {
   border: solid 1px #eaeaea;
   background-color: #ffffff;
   font-size: 13px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.85;
-  letter-spacing: normal;
   text-align: center;
   color: #bcbcbc;
 }
@@ -1160,11 +1100,7 @@ input[type=submit] {
   border: solid 1px #eaeaea;
   background-color: #ffffff;
   font-size: 13px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 1.85;
-  letter-spacing: normal;
   color: #bcbcbc;
 }
 
@@ -1235,10 +1171,7 @@ input[type=submit] {
 .headerSinglePage {
   font-size: 24px;
   font-weight: 900;
-  font-stretch: normal;
-  font-style: normal;
   line-height: 0.83;
-  letter-spacing: normal;
   text-align: center;
   color: #4d4d4d;
   text-transform: uppercase;
@@ -1443,45 +1376,82 @@ select {
   outline: none;
 }
 
+.logoNone {
+  width: 50%;
+  display: none;
+  flex-wrap: wrap;
+}
+
+.MiniLogo:nth-child(even) {
+  margin-bottom: 20px;
+}
+
+.MiniLogo:nth-child(odd) {
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
 /* CHECKOUT PAGE*/
-.ac-container label {
-  font-family: "Arial Narrow", Arial, sans-serif;
-  padding: 5px 20px;
+.textCaption {
+  font-size: 13px;
+  color: #222222;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.textSubtitle {
+  font-size: 13px;
+  line-height: 1.54;
+  text-align: left;
+  color: #b3b2b2;
+}
+
+.ac-container .label {
+  padding: 33px 0;
   display: block;
   height: 30px;
-  color: #777;
-  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
   line-height: 33px;
   font-size: 19px;
-  background: linear-gradient(top, #ffffff 1%, #eaeaea 100%);
-  box-shadow: 0px 0px 0px 1px rgba(155, 155, 155, 0.3), 1px 0px 0px 0px rgba(255, 255, 255, 0.9) inset, 0px 2px 2px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  color: #222222;
+  text-transform: uppercase;
 }
 
-.ac-container label:hover {
-  background: #fff;
+.textCaption {
+  margin-bottom: 15px;
 }
 
-.ac-container input:checked + label,
-.ac-container input:checked + label:hover {
-  background: #c6e1ec;
-  color: #3d7489;
-  text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.6);
-  box-shadow: 0px 0px 0px 1px rgba(155, 155, 155, 0.3), 0px 2px 2px rgba(0, 0, 0, 0.1);
+.textSubtitle {
+  margin-bottom: 30px;
+}
+
+.textSubtitle_margin {
+  margin-bottom: 15px;
+}
+
+.margin-flex {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-around;
+  border-bottom: 1px solid #e8e8e8;
 }
 
 .ac-container label:hover:after,
 .ac-container input:checked + label:hover:after {
   content: "";
   position: absolute;
-  width: 24px;
-  height: 24px;
   right: 13px;
   top: 7px;
-  background: transparent url(http://netcribe.com/example/arrow_down.png) no-repeat center center;
 }
 
-.ac-container input {
+.ac-container input[type=checkbox] {
   display: none;
+}
+
+.acContainer:last-of-type {
+  margin-bottom: 93px;
 }
 
 .ac-container article {
@@ -1496,5 +1466,258 @@ select {
 
 .ac-container input:checked ~ article {
   transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
-  height: 100px;
+  height: 400px;
+}
+
+.linkContinue {
+  padding: 17px 50px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+  color: #4a4a4a;
+  text-transform: uppercase;
+  border: solid 1px #eaeaea;
+  background-color: #ffffff;
+}
+
+.linkForgot {
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: left;
+  color: #222222;
+  margin-left: 32px;
+}
+
+.formaCheckoutInput {
+  width: 390px;
+  height: 45px;
+  border: solid 1px #eaeaea;
+  background-color: #ffffff;
+  margin-bottom: 22px;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.textSubtitlePink {
+  font-size: 13px;
+  line-height: 1.54;
+  text-align: left;
+  color: #ff0d0d;
+  margin-bottom: 32px;
+  font-weight: bold;
+}
+
+.radio {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.radio_input {
+  -webkit-appearance: none;
+  /* Chrome */
+  -moz-appearance: none;
+  /* Firefox */
+  appearance: none;
+  /* убираем стандартные кружочки */
+  position: absolute;
+}
+
+.radio_label {
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+.radio:first-of-type {
+  margin-bottom: 10px;
+}
+
+.radio input[type=radio] {
+  display: none;
+}
+
+.radio_label:before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #555555;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: border 0.1s linear;
+}
+
+.radio_label:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #000000;
+  border-radius: 50%;
+  opacity: 0;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 2;
+  transition: opacity 0.1s linear;
+}
+
+.radio_input:checked + .radio_label:after {
+  opacity: 1;
+}
+
+.fa-navicon,
+.fa-user,
+.cartTablet {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0px 16px;
+    box-sizing: border-box;
+  }
+
+  .head {
+    max-height: 100px;
+  }
+
+  .card {
+    width: 350px;
+  }
+
+  .cardMain {
+    align-items: center;
+  }
+
+  .card:nth-last-child(2),
+.card:nth-last-child(1) {
+    display: none;
+  }
+
+  .adv {
+    padding: 0 16px;
+  }
+
+  .advLeft {
+    display: none;
+  }
+
+  .advRight {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .description1,
+.description2,
+.description3 {
+    flex-direction: column;
+    align-items: center;
+    width: 32%;
+  }
+
+  .textMainAdv {
+    text-align: center;
+  }
+
+  .imgFormat {
+    width: auto;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .feedback {
+    margin-top: 40px;
+  }
+
+  .feedbackRight {
+    margin-top: -350px;
+    margin-left: 500px;
+  }
+
+  .logoNone {
+    display: flex;
+    margin-left: 40px;
+  }
+
+  .feedbackMini {
+    position: relative;
+  }
+
+  .feedbackLeft {
+    position: absolute;
+    flex-direction: column;
+    width: 98%;
+  }
+
+  .imgFeedback {
+    text-align: center;
+  }
+
+  .textFeedback {
+    text-align: center;
+  }
+
+  .karusel {
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0;
+  }
+
+  .logoTablet, .browse, .mainNav, .inputSearch {
+    display: none;
+  }
+
+  .iconTablet,
+.cartTablet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cartLinkDown {
+    padding: 0%;
+    margin-right: 0;
+  }
+
+  .cart {
+    display: none;
+  }
+
+  .fa-search {
+    border: none;
+    background-color: auto;
+  }
+
+  .feedbackRight {
+    margin-top: -350px;
+    margin-left: 50px;
+  }
+
+  header {
+    box-shadow: none;
+    border: none;
+    padding: 0;
+  }
+
+  .fa-navicon, .fa-user {
+    display: block;
+    color: white;
+  }
+
+  .myAcc {
+    display: none;
+  }
+
+  .head {
+    padding: 0 16px;
+    background-color: black;
+  }
 }
