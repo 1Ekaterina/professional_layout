@@ -120,6 +120,7 @@ a {
 .pink {
   font-weight: 900;
   color: #f16d7f;
+  text-transform: uppercase;
 }
 
 .browse {
@@ -1112,6 +1113,7 @@ input[type="submit"] {
 
 .mega-box {
   margin-top: 10px;
+  z-index: 100;
 }
 
 .imgMega-Flex {

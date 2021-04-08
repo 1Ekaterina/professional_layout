@@ -101,6 +101,7 @@ a {
 .pink {
     font-weight: 900;
     color: #f16d7f;
+    text-transform: uppercase
 }
 .browse {
     @extend %flex-center;
@@ -985,6 +986,7 @@ form {
 .mega-box {
     @extend %boxDown;
     margin-top: 10px;
+    z-index: 100;
 }
 .imgMega-Flex{
     position: relative;
